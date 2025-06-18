@@ -1,5 +1,5 @@
 import React from 'react';
-import WelcomeScreen from '@/WelcomeScreen/WelcomeScreen'; // outside app folder
+import WelcomeScreen from '@/WelcomeScreen/WelcomeScreen';
 
 export default function Welcome() {
   return <WelcomeScreen />;
