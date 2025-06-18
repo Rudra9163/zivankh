@@ -1,12 +1,11 @@
 import React from "react";
 import { View, Text, Image, TouchableOpacity, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { LinearGradient } from "expo-linear-gradient"; // ✅ import
+import { LinearGradient } from "expo-linear-gradient";
 
 const WelcomeScreen: React.FC = () => {
   return (
     <LinearGradient colors={["#FBFEFF", "#ECFBFE"]} style={styles.container}>
-      {/* Top Section */}
       <View style={styles.topBar}>
         <View style={styles.leftSection}>
           <Image
@@ -33,14 +32,10 @@ const WelcomeScreen: React.FC = () => {
           </TouchableOpacity>
         </View>
       </View>
-
-      {/* Greeting */}
       <Text style={styles.greetingText}>
         Hi, Abc patient, Let’s get started — I’m here to listen and help you
         feel better!
       </Text>
-
-      {/* Buttons */}
       <Image
         source={require("../assets/images/mobileui/Frame 4.png")}
         style={styles.medicalReport}
@@ -49,8 +44,6 @@ const WelcomeScreen: React.FC = () => {
         source={require("../assets/images/mobileui/Frame 5.png")}
         style={styles.talktoImg}
       />
-
-      {/* Doctor Illustration */}
       <Image
         source={require("../assets/images/mobileui/image 6.png")}
         style={styles.doctorImg}
